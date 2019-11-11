@@ -10,8 +10,8 @@ Unity Space Shooter game in Augmented Reality using Vuforia
 1. Download this repository
 2. Download the Unity Developement Environment
 3. Download the Vuforia Unity Extension
-4. Start Unity -> Go to File ->  Open Project -> Select this folder
-5. Select (double click) '3DMain' from 'Scenes' in the Project Window.
+4. Start Unity -> Go to File ->  Open Project -> Select CONA folder
+5. Select (double click) 'MainMenu' from 'Scenes' in the Project Window.
 6. Press the Run button to run the project inside Unity
 7. Go to File -> Build Settings -> Build to build an APK for Android
 
