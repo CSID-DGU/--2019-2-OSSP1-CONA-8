@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class LoadLevelOnClick : MonoBehaviour
 {
@@ -11,9 +12,9 @@ public class LoadLevelOnClick : MonoBehaviour
         Application.LoadLevel(level);
     }
 
-
     public void QuitGame()
     {
         Application.Quit();
     }
+
 }
