@@ -19,16 +19,18 @@ public class Done_PlayerController : MonoBehaviour
 	public GameObject shot;
 	public Transform shotSpawn;
 	public float fireRate;
-    private Renderer renderer3D;
+    public Renderer renderer3D;
 
     private float nextFire;
 
     void Awake()
     {
         renderer3D = GetComponent<Renderer>();
+        
+        GetComponent<Rigidbody>().rotation = Quaternion.Euler(0.0f, 0.0f, GetComponent<Rigidbody>().velocity.x);
     }
 	
-	void Update ()
+	public void Update ()
 	{
         if (renderer3D.enabled && Time.time > nextFire) 
 		{
@@ -36,26 +38,26 @@ public class Done_PlayerController : MonoBehaviour
 			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
 			GetComponent<AudioSource>().Play ();
 		}
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        //float moveHorizontal = Input.GetAxis("Horizontal");
+        //float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        GetComponent<Rigidbody>().velocity = movement * speed;
+        //Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        //GetComponent<Rigidbody>().velocity = movement * speed;
 
-        GetComponent<Rigidbody>().position = new Vector3
-        (
-            Mathf.Clamp(GetComponent<Rigidbody>().position.x, boundary.xMin, boundary.xMax),
-            0.0f,
-            Mathf.Clamp(GetComponent<Rigidbody>().position.z, boundary.zMin, boundary.zMax)
-        );
+        //GetComponent<Rigidbody>().position = new Vector3
+        //(
+        //    Mathf.Clamp(GetComponent<Rigidbody>().position.x, boundary.xMin, boundary.xMax),
+        //    0.0f,
+        //    Mathf.Clamp(GetComponent<Rigidbody>().position.z, boundary.zMin, boundary.zMax)
+        //);
 
-        GetComponent<Rigidbody>().rotation = Quaternion.Euler(0.0f, 0.0f, GetComponent<Rigidbody>().velocity.x * -tilt);
+        //GetComponent<Rigidbody>().rotation = Quaternion.Euler(0.0f, 0.0f, GetComponent<Rigidbody>().velocity.x * -tilt);
     }
 
-    
     public void FixedUpdate()
     {
-        transform.rotation = followTarget.rotation; //imagetarget의 회전을 따라간다.
+        //transform.rotation = followTarget.rotation; //imagetarget의 회전을 따라간다.
+        transform.rotation = Quaternion.Euler(0.0f, -followTarget.rotation.eulerAngles.y , 0.0f);
 
         //위치 이동은 좌우로만 따라가도록 한다.
         transform.position = new Vector3(

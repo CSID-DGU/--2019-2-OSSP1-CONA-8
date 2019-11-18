@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Camera))]
 public class MirrorFlipCamera : MonoBehaviour
 {
     private Camera cameraCurrent;

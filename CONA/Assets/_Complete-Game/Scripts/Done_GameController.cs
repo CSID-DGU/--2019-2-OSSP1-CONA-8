@@ -39,6 +39,8 @@ public class Done_GameController : MonoBehaviour
         score = 0;
         UpdateScore();
         StartCoroutine(SpawnWaves());
+
+        InitCameraMirroring();
     }
 
     void Update()
@@ -108,6 +110,11 @@ public class Done_GameController : MonoBehaviour
 
             PlayerController.positionFactor *= -1f;
         }
+    }
+
+    void InitPlayer()
+    {
+        PlayerController.enabled = true;
     }
 
     //재시작 버튼을 누를 때 실행되는 함수
