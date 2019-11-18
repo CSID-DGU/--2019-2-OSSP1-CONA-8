@@ -2,7 +2,7 @@
 Unity Space Shooter game in Augmented Reality using Vuforia
 
 ## Requirements
-[Unity](http://unity3d.com) Version 4.6.2f1
+[Unity](http://unity3d.com) Version 2019.2.10f1
 
 [Vuforia](https://developer.vuforia.com) Unity Extension Version 4.0.103
 
@@ -20,3 +20,6 @@ We have also provided an already up-to-date APK in the Android APK folder if you
 ## More Details
 1. Scripts: CONA -> Assets -> _Complete-Game -> Scripts
 2. Scenes: CONA -> Assets -> _Complete-Game -> Scenes
+
+## 참고 open source
+https://github.com/lukearmstrong/unity-tutorial-space-shooter
