@@ -20,3 +20,6 @@ We have also provided an already up-to-date APK in the Android APK folder if you
 ## More Details
 1. Scripts: CONA -> Assets -> _Complete-Game -> Scripts
 2. Scenes: CONA -> Assets -> _Complete-Game -> Scenes
+
+## 참고 open source
+https://github.com/lukearmstrong/unity-tutorial-space-shooter
