@@ -60,6 +60,9 @@ public class Done_PlayerController : MonoBehaviour
        
         transform.rotation = Quaternion.Euler(0.0f, -followTarget.rotation.eulerAngles.y, 0.0f);
 
+
+        //TODO 
+        // player boundary 수정
         if (transform.position.x <= boundary.xMax && transform.position.x >= boundary.xMin)
         {
             //위치 이동은 좌우로만 따라가도록 한다.
