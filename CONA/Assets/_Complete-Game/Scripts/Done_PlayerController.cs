@@ -57,9 +57,8 @@ public class Done_PlayerController : MonoBehaviour
     public void FixedUpdate()
     {
         //transform.rotation = followTarget.rotation; //imagetarget의 회전을 따라간다.
-       
-        transform.rotation = Quaternion.Euler(0.0f, -followTarget.rotation.eulerAngles.y, 0.0f);
 
+        transform.rotation = Quaternion.Euler(0.0f, -followTarget.rotation.eulerAngles.y, 0.0f);
 
         //TODO 
         // player boundary 수정
@@ -88,6 +87,12 @@ public class Done_PlayerController : MonoBehaviour
             transform.position.z
             );
         }
+
+        transform.position = new Vector3(
+            Mathf.Clamp(transform.position.x, boundary.xMin, boundary.xMax),
+            0.0f,
+            Mathf.Clamp(transform.position.z, boundary.zMin, boundary.zMax)
+        );//플레이어가 화면 가장자리를 벗어나지 않도록한다.
     }
 
     //void FixedUpdate ()
