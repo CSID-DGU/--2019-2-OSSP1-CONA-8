@@ -93,6 +93,8 @@ public class Done_GameController : MonoBehaviour
     {
         gameOverText.text = "Game Over!";
         gameOver = true;
+        //플레이어 사망시 게임 스코어 업데이트
+        HighScoreManager.Score = score;
 
         OnGameOver.Invoke();
     }
