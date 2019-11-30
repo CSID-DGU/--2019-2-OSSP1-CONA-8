@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - HighScoreManager
     - LoadLevelOnClick
     - MirrorFlipCamera
+    - Readme
     - VuforiaTrackableEventHandlerCustomAR
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
@@ -22,14 +23,9 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     - TMPro.TMP_SubMeshUI
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -50,7 +46,7 @@ ScriptsOnlyBuild:
     VuforiaScripts.dll:
     - DefaultInitializationErrorHandler
   sceneClasses:
-    Assets/_Complete-Game/Scenes/Done_Main.unity:
+    Assets/_Complete-Game/Scenes/Game.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -86,57 +82,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9782}
+      Script: {instanceID: 9810}
     - Class: 114
-      Script: {instanceID: 9916}
+      Script: {instanceID: 9944}
     - Class: 114
-      Script: {instanceID: 9942}
+      Script: {instanceID: 9970}
     - Class: 114
-      Script: {instanceID: 9982}
+      Script: {instanceID: 10010}
     - Class: 114
-      Script: {instanceID: 10130}
+      Script: {instanceID: 10160}
     - Class: 114
-      Script: {instanceID: 10210}
+      Script: {instanceID: 10240}
     - Class: 114
-      Script: {instanceID: 10270}
+      Script: {instanceID: 10300}
     - Class: 114
-      Script: {instanceID: 10314}
+      Script: {instanceID: 10344}
     - Class: 114
-      Script: {instanceID: 10394}
+      Script: {instanceID: 10424}
     - Class: 114
-      Script: {instanceID: 10504}
+      Script: {instanceID: 10536}
     - Class: 114
-      Script: {instanceID: 10526}
+      Script: {instanceID: 10558}
     - Class: 114
-      Script: {instanceID: 10534}
+      Script: {instanceID: 10566}
     - Class: 114
-      Script: {instanceID: 10578}
+      Script: {instanceID: 10610}
     - Class: 114
-      Script: {instanceID: 10972}
+      Script: {instanceID: 11012}
     - Class: 114
-      Script: {instanceID: 11070}
+      Script: {instanceID: 11114}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 11236}
     - Class: 114
-      Script: {instanceID: 11280}
+      Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11324}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11402}
+      Script: {instanceID: 11450}
     - Class: 114
-      Script: {instanceID: 11464}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11560}
+      Script: {instanceID: 11608}
     - Class: 114
-      Script: {instanceID: 11642}
+      Script: {instanceID: 11690}
     - Class: 114
-      Script: {instanceID: 11672}
+      Script: {instanceID: 11720}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 11832}
     - Class: 114
-      Script: {instanceID: 11912}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12050}
+      Script: {instanceID: 12106}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -193,34 +189,36 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9782}
+      Script: {instanceID: 9810}
     - Class: 114
-      Script: {instanceID: 9792}
+      Script: {instanceID: 9820}
     - Class: 114
-      Script: {instanceID: 9852}
+      Script: {instanceID: 9880}
     - Class: 114
-      Script: {instanceID: 9942}
+      Script: {instanceID: 9970}
     - Class: 114
-      Script: {instanceID: 9972}
+      Script: {instanceID: 10000}
     - Class: 114
-      Script: {instanceID: 9982}
+      Script: {instanceID: 10010}
     - Class: 114
-      Script: {instanceID: 10314}
+      Script: {instanceID: 10344}
     - Class: 114
-      Script: {instanceID: 10394}
+      Script: {instanceID: 10424}
     - Class: 114
-      Script: {instanceID: 10972}
+      Script: {instanceID: 11012}
     - Class: 114
-      Script: {instanceID: 11050}
+      Script: {instanceID: 11094}
     - Class: 114
-      Script: {instanceID: 11464}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11912}
+      Script: {instanceID: 11966}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -239,19 +237,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
-      Script: {instanceID: 0}
-    - Class: 64
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -268,41 +258,39 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9782}
+      Script: {instanceID: 9810}
     - Class: 114
-      Script: {instanceID: 9792}
+      Script: {instanceID: 9880}
     - Class: 114
-      Script: {instanceID: 9852}
+      Script: {instanceID: 9970}
     - Class: 114
-      Script: {instanceID: 9942}
+      Script: {instanceID: 10000}
     - Class: 114
-      Script: {instanceID: 9972}
+      Script: {instanceID: 10010}
     - Class: 114
-      Script: {instanceID: 9982}
+      Script: {instanceID: 10344}
     - Class: 114
-      Script: {instanceID: 10314}
+      Script: {instanceID: 10424}
     - Class: 114
-      Script: {instanceID: 10394}
+      Script: {instanceID: 10446}
     - Class: 114
-      Script: {instanceID: 10416}
+      Script: {instanceID: 10568}
     - Class: 114
-      Script: {instanceID: 10536}
+      Script: {instanceID: 11012}
     - Class: 114
-      Script: {instanceID: 10972}
+      Script: {instanceID: 11032}
     - Class: 114
-      Script: {instanceID: 10992}
+      Script: {instanceID: 11236}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11208}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11464}
+      Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 11912}
-    - Class: 114
-      Script: {instanceID: 11946}
+      Script: {instanceID: 12000}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -310,6 +298,8 @@ ScriptsOnlyBuild:
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1686,5 +1676,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/_Complete-Game/Scenes/MainMenu.unity
   - Assets/_Complete-Game/Scenes/HighScoreBoard.unity
-  - Assets/_Complete-Game/Scenes/Done_Main.unity
+  - Assets/_Complete-Game/Scenes/Game.unity
   playerPath: C:/Users/pc/Documents/--2019-2-OSSP1-CONA-8/CONA/apk/test.apk

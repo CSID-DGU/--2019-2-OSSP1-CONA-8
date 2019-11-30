@@ -16,6 +16,7 @@ public class Done_GameController : MonoBehaviour
     public float waveWait;
 
     public Text scoreText;
+    public Text lastScore;
     public Text restartText;
     public Text gameOverText;
 
@@ -87,6 +88,7 @@ public class Done_GameController : MonoBehaviour
     void UpdateScore()
     {
         scoreText.text = "Score: " + score;
+        lastScore.text = "Score: " + score;
     }
 
     public void GameOver()
