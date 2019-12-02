@@ -45,6 +45,11 @@ public class Done_GameController : MonoBehaviour
         StartCoroutine(SpawnWaves());
 
         InitCameraMirroring();
+
+        for (int i = 0; i < hazardCount; ++i)
+        {
+            hazards[i].GetComponent<Done_Mover>().speed = -5;
+        }
     }
 
     void Update()
@@ -87,6 +92,7 @@ public class Done_GameController : MonoBehaviour
         }
     }
 
+    //적들 속도를 점점 증가시키는 함수
     void MoveFaster()
     {
         for(int i=0;i< hazardCount;++i)
@@ -112,8 +118,8 @@ public class Done_GameController : MonoBehaviour
         gameOverText.text = "Game Over!";
         gameOver = true;
         //플레이어 사망시 게임 스코어 업데이트
-        HighScoreManager.Score.Add(score);
         OnGameOver.Invoke();
+        HighScoreManager.Score.Add(score);
     }
 
     private void InitCameraMirroring()

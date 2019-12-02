@@ -14,7 +14,6 @@ ScriptsOnlyBuild:
     - HighScoreManager
     - LoadLevelOnClick
     - MirrorFlipCamera
-    - Readme
     - VuforiaTrackableEventHandlerCustomAR
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
@@ -82,57 +81,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9810}
+      Script: {instanceID: 9782}
     - Class: 114
-      Script: {instanceID: 9944}
+      Script: {instanceID: 9916}
     - Class: 114
-      Script: {instanceID: 9970}
+      Script: {instanceID: 9942}
     - Class: 114
-      Script: {instanceID: 10010}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 10160}
+      Script: {instanceID: 10130}
     - Class: 114
-      Script: {instanceID: 10240}
+      Script: {instanceID: 10210}
     - Class: 114
-      Script: {instanceID: 10300}
+      Script: {instanceID: 10270}
     - Class: 114
-      Script: {instanceID: 10344}
+      Script: {instanceID: 10314}
     - Class: 114
-      Script: {instanceID: 10424}
+      Script: {instanceID: 10394}
     - Class: 114
-      Script: {instanceID: 10536}
+      Script: {instanceID: 10504}
     - Class: 114
-      Script: {instanceID: 10558}
+      Script: {instanceID: 10526}
     - Class: 114
-      Script: {instanceID: 10566}
+      Script: {instanceID: 10534}
     - Class: 114
-      Script: {instanceID: 10610}
+      Script: {instanceID: 10578}
     - Class: 114
-      Script: {instanceID: 11012}
+      Script: {instanceID: 10972}
     - Class: 114
-      Script: {instanceID: 11114}
+      Script: {instanceID: 11070}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11328}
+      Script: {instanceID: 11280}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 11324}
     - Class: 114
-      Script: {instanceID: 11450}
+      Script: {instanceID: 11402}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11464}
     - Class: 114
-      Script: {instanceID: 11608}
+      Script: {instanceID: 11560}
     - Class: 114
-      Script: {instanceID: 11690}
+      Script: {instanceID: 11642}
     - Class: 114
-      Script: {instanceID: 11720}
+      Script: {instanceID: 11672}
     - Class: 114
-      Script: {instanceID: 11832}
+      Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 11966}
+      Script: {instanceID: 11912}
     - Class: 114
-      Script: {instanceID: 12106}
+      Script: {instanceID: 12050}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -189,36 +188,34 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9810}
+      Script: {instanceID: 9782}
     - Class: 114
-      Script: {instanceID: 9820}
+      Script: {instanceID: 9792}
     - Class: 114
-      Script: {instanceID: 9880}
+      Script: {instanceID: 9852}
     - Class: 114
-      Script: {instanceID: 9970}
+      Script: {instanceID: 9942}
     - Class: 114
-      Script: {instanceID: 10000}
+      Script: {instanceID: 9972}
     - Class: 114
-      Script: {instanceID: 10010}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 10344}
+      Script: {instanceID: 10314}
     - Class: 114
-      Script: {instanceID: 10424}
+      Script: {instanceID: 10394}
     - Class: 114
-      Script: {instanceID: 11012}
+      Script: {instanceID: 10972}
     - Class: 114
-      Script: {instanceID: 11094}
+      Script: {instanceID: 11050}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11464}
     - Class: 114
-      Script: {instanceID: 11966}
+      Script: {instanceID: 11912}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -258,39 +255,39 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9810}
+      Script: {instanceID: 9782}
     - Class: 114
-      Script: {instanceID: 9880}
+      Script: {instanceID: 9852}
     - Class: 114
-      Script: {instanceID: 9970}
+      Script: {instanceID: 9942}
     - Class: 114
-      Script: {instanceID: 10000}
+      Script: {instanceID: 9972}
     - Class: 114
-      Script: {instanceID: 10010}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 10344}
+      Script: {instanceID: 10314}
     - Class: 114
-      Script: {instanceID: 10424}
+      Script: {instanceID: 10394}
     - Class: 114
-      Script: {instanceID: 10446}
+      Script: {instanceID: 10416}
     - Class: 114
-      Script: {instanceID: 10568}
+      Script: {instanceID: 10536}
     - Class: 114
-      Script: {instanceID: 11012}
+      Script: {instanceID: 10972}
     - Class: 114
-      Script: {instanceID: 11032}
+      Script: {instanceID: 10992}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11208}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11464}
     - Class: 114
-      Script: {instanceID: 11670}
+      Script: {instanceID: 11622}
     - Class: 114
-      Script: {instanceID: 11966}
+      Script: {instanceID: 11912}
     - Class: 114
-      Script: {instanceID: 12000}
+      Script: {instanceID: 11946}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -298,8 +295,6 @@ ScriptsOnlyBuild:
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1662,7 +1657,7 @@ ScriptsOnlyBuild:
     className: WireframeTrackableEventHandler
   - hash:
       serializedVersion: 2
-      Hash: c065d31306dbc8b9d7944d8c38e55197
+      Hash: 476fc66dac114e89899daaa8803e92e7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Done_GameController
