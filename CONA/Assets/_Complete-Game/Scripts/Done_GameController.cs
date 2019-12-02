@@ -83,12 +83,6 @@ public class Done_GameController : MonoBehaviour
             }
             yield return new WaitForSeconds(waveWait);
 
-            if (gameOver)
-            {
-                restartText.text = "Press 'R' for Restart";
-                restart = true;
-                break;
-            }
         }
     }
 
@@ -111,6 +105,7 @@ public class Done_GameController : MonoBehaviour
     {
         scoreText.text = "Score: " + score;
         lastScore.text = "Score: " + score;
+        if(gameOver) HighScoreManager.Score.Add(score);
     }
 
     public void GameOver()
@@ -119,7 +114,7 @@ public class Done_GameController : MonoBehaviour
         gameOver = true;
         //플레이어 사망시 게임 스코어 업데이트
         OnGameOver.Invoke();
-        HighScoreManager.Score.Add(score);
+        
     }
 
     private void InitCameraMirroring()
