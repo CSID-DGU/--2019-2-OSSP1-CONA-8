@@ -31,6 +31,9 @@ public class Done_GameController : MonoBehaviour
 
     public UnityEvent OnGameOver;
 
+    private float TimeLeft = 10.0f;
+    private float nextTime = 0.0f;
+
     void Start()
     {
         gameOver = false;
@@ -52,6 +55,11 @@ public class Done_GameController : MonoBehaviour
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
+        }
+        if(Time.time > nextTime)
+        {
+            nextTime = Time.time + TimeLeft;
+            MoveFaster();
         }
     }
 
@@ -79,6 +87,14 @@ public class Done_GameController : MonoBehaviour
         }
     }
 
+    void MoveFaster()
+    {
+        for(int i=0;i< hazardCount;++i)
+        {
+            hazards[i].GetComponent<Done_Mover>().speed -= 1;
+        }
+    }
+
     public void AddScore(int newScoreValue)
     {
         score += newScoreValue;
@@ -96,8 +112,7 @@ public class Done_GameController : MonoBehaviour
         gameOverText.text = "Game Over!";
         gameOver = true;
         //플레이어 사망시 게임 스코어 업데이트
-        HighScoreManager.Score = score;
-
+        HighScoreManager.Score.Add(score);
         OnGameOver.Invoke();
     }
 
