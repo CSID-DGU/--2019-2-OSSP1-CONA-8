@@ -10,7 +10,8 @@ public class Dont_Destroy : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
     }
-
+    
+    //Scene 전환 시 gameObject 전부 없애기
     void Update()
     {
         if (Application.loadedLevel == 1 || Application.loadedLevel == 2)

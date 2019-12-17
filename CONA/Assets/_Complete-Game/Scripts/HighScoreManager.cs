@@ -56,22 +56,11 @@ public class HighScoreManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-
-        //게임컨트롤러에서 스코어 업데이트 후
-        //저장되어 있던 게임스코어 비교
-        
-
-    }
-
-
     // Use this for initialization
     void Start()
     {
         //PlayerPrefs.DeleteAll();
-
-
+        
         //Awake로 highscore업데이트 후 실행
         //HighScoreText에 ranking표시
         for (int i = 0; i < HighScoreList.Count && i<5; i++)

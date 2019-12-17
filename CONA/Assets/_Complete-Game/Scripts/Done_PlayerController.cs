@@ -37,30 +37,13 @@ public class Done_PlayerController : MonoBehaviour
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
             GetComponent<AudioSource>().Play();
-        }
-        //float moveHorizontal = Input.GetAxis("Horizontal");
-        //float moveVertical = Input.GetAxis("Vertical");
-
-        //Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        //GetComponent<Rigidbody>().velocity = movement * speed;
-
-        //GetComponent<Rigidbody>().position = new Vector3
-        //(
-        //    Mathf.Clamp(GetComponent<Rigidbody>().position.x, boundary.xMin, boundary.xMax),
-        //    0.0f,
-        //    Mathf.Clamp(GetComponent<Rigidbody>().position.z, boundary.zMin, boundary.zMax)
-        //);
-
-        //GetComponent<Rigidbody>().rotation = Quaternion.Euler(0.0f, 0.0f, GetComponent<Rigidbody>().velocity.x * -tilt);
+        };
     }
 
     public void FixedUpdate()
     {
-        //transform.rotation = followTarget.rotation; //imagetarget의 회전을 따라간다.
-
         transform.rotation = Quaternion.Euler(0.0f, -followTarget.rotation.eulerAngles.y, 0.0f);
-
-        //TODO 
+        
         // player boundary 수정
         if (transform.position.x <= boundary.xMax && transform.position.x >= boundary.xMin)
         {
@@ -94,22 +77,5 @@ public class Done_PlayerController : MonoBehaviour
             Mathf.Clamp(transform.position.z, boundary.zMin, boundary.zMax)
         );//플레이어가 화면 가장자리를 벗어나지 않도록한다.
     }
-
-    //void FixedUpdate ()
-    //{
-    //	float moveHorizontal = Input.GetAxis ("Horizontal");
-    //	float moveVertical = Input.GetAxis ("Vertical");
-
-    //	Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
-    //	GetComponent<Rigidbody>().velocity = movement * speed;
-
-    //	GetComponent<Rigidbody>().position = new Vector3
-    //	(
-    //		Mathf.Clamp (GetComponent<Rigidbody>().position.x, boundary.xMin, boundary.xMax), 
-    //		0.0f, 
-    //		Mathf.Clamp (GetComponent<Rigidbody>().position.z, boundary.zMin, boundary.zMax)
-    //	);
-
-    //	GetComponent<Rigidbody>().rotation = Quaternion.Euler (0.0f, 0.0f, GetComponent<Rigidbody>().velocity.x * -tilt);
-    //}
+    
 }

@@ -25,7 +25,7 @@ public class Done_DestroyByContact : MonoBehaviour
 	{
 		if (other.tag == "Boundary" || other.tag == "Enemy")
 		{
-			return;
+            return;
 		}
 
 		if (explosion != null)
@@ -43,4 +43,5 @@ public class Done_DestroyByContact : MonoBehaviour
 		Destroy (other.gameObject);
 		Destroy (gameObject);
 	}
+    
 }

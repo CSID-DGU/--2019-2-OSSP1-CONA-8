@@ -46,6 +46,7 @@ public class Done_GameController : MonoBehaviour
 
         InitCameraMirroring();
 
+        //적 속도 초기화
         for (int i = 0; i < hazardCount; ++i)
         {
             hazards[i].GetComponent<Done_Mover>().speed = -5;
@@ -54,13 +55,6 @@ public class Done_GameController : MonoBehaviour
 
     void Update()
     {
-        if (restart)
-        {
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
-        }
         if(Time.time > nextTime)
         {
             nextTime = Time.time + TimeLeft;
@@ -82,19 +76,18 @@ public class Done_GameController : MonoBehaviour
                 yield return new WaitForSeconds(spawnWait);
             }
             yield return new WaitForSeconds(waveWait);
-
         }
     }
 
     //적들 속도를 점점 증가시키는 함수
     void MoveFaster()
     {
-        for(int i=0;i< hazardCount;++i)
+        for(int i=0;i < hazardCount;++i)
         {
             hazards[i].GetComponent<Done_Mover>().speed -= 1;
         }
     }
-
+    
     public void AddScore(int newScoreValue)
     {
         score += newScoreValue;
@@ -114,7 +107,6 @@ public class Done_GameController : MonoBehaviour
         gameOver = true;
         //플레이어 사망시 게임 스코어 업데이트
         OnGameOver.Invoke();
-        
     }
 
     private void InitCameraMirroring()
@@ -146,7 +138,6 @@ public class Done_GameController : MonoBehaviour
     //게임 종료 버튼을 누를 때 실행되는 함수
     public void OnClickGameExit()
     {
-        //Application.LoadLevel(0);
         SceneManager.LoadScene(0); //메인화면으로 간다.
     }
 }
